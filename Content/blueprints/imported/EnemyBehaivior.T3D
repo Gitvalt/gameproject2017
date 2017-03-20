@@ -1,0 +1,86 @@
+Begin Object Class=BehaviorTree Name="EnemyBehaivior"
+   Begin Object Class=BehaviorTreeGraph Name="Behavior Tree"
+      Begin Object Class=BehaviorTreeGraphNode_Composite Name="BehaviorTreeGraphNode_Composite_0"
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Root Name="BehaviorTreeGraphNode_Root_0"
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_0"
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Service Name="BehaviorTreeGraphNode_Service_4"
+      End Object
+   End Object
+   Begin Object Class=BTComposite_Selector Name="BTComposite_Selector_0"
+   End Object
+   Begin Object Class=findplayerService_C Name="findplayerService_C_0"
+   End Object
+   Begin Object Class=BTTask_MoveTo Name="BTTask_MoveTo_0"
+      Begin Object Class=BlackboardKeyType_Vector Name="BlackboardKey_Vector" Archetype=BlackboardKeyType_Vector'Default__BTTask_MoveTo:BlackboardKey_Vector'
+      End Object
+      Begin Object Class=BlackboardKeyType_Object Name="BlackboardKey_Object_0"
+      End Object
+   End Object
+   Begin Object Name="Behavior Tree"
+      Begin Object Name="BehaviorTreeGraphNode_Composite_0"
+         Services(0)=BehaviorTreeGraphNode_Service'"EnemyBehaivior:Behavior Tree.BehaviorTreeGraphNode_Service_4"'
+         ClassData=(ClassName="BTComposite_Selector")
+         NodeInstance=BTComposite_Selector'EnemyBehaivior:BTComposite_Selector_0'
+         SubNodes(0)=BehaviorTreeGraphNode_Service'"EnemyBehaivior:Behavior Tree.BehaviorTreeGraphNode_Service_4"'
+         NodePosX=-64
+         NodePosY=128
+         NodeGuid=88E1795442F07414EAC9C2992367036A
+         CustomProperties Pin (PinId=6635282E4EF97332438884BD7CED8F46,PinName="In",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(BehaviorTreeGraphNode_Root_0 62F375FB47722520409610A1C220D038,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=EDFD4424493C6D28BB9211BD9993FE43,PinName="Out",Direction="EGPD_Output",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(BehaviorTreeGraphNode_Task_0 5DE7825649189A238CEBFEA0F4EEDC52,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Root_0"
+         BlackboardAsset=BlackboardData'/Game/ThirdPersonBP/Blueprints/enemyBlackBoard.enemyBlackBoard'
+         NodeGuid=2A1AD88D4F2697CAA0E2689A65275E76
+         CustomProperties Pin (PinId=62F375FB47722520409610A1C220D038,PinName="In",Direction="EGPD_Output",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(BehaviorTreeGraphNode_Composite_0 6635282E4EF97332438884BD7CED8F46,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Task_0"
+         ClassData=(ClassName="BTTask_MoveTo")
+         NodeInstance=BTTask_MoveTo'EnemyBehaivior:BTTask_MoveTo_0'
+         NodePosX=-48
+         NodePosY=384
+         NodeGuid=6C1FCC994FE4F65FD8CC948B5D8172C1
+         CustomProperties Pin (PinId=5DE7825649189A238CEBFEA0F4EEDC52,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(BehaviorTreeGraphNode_Composite_0 EDFD4424493C6D28BB9211BD9993FE43,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Service_4"
+         ClassData=(AssetName="findplayerService",GeneratedClassPackage="/Game/ThirdPersonBP/Blueprints/findplayerService",ClassName="findplayerService_C")
+         NodeInstance=findplayerService_C'EnemyBehaivior:findplayerService_C_0'
+         NodeGuid=B1ED21D34ADFC88B30EB42B288A98216
+      End Object
+      ModCounter=20
+      bIsUsingModCounter=True
+      GraphVersion=2
+      Nodes(0)=BehaviorTreeGraphNode_Root'BehaviorTreeGraphNode_Root_0'
+      Nodes(1)=BehaviorTreeGraphNode_Composite'BehaviorTreeGraphNode_Composite_0'
+      Nodes(2)=BehaviorTreeGraphNode_Task'BehaviorTreeGraphNode_Task_0'
+      GraphGuid=562BE7EE4E7DA19D88A8FF8B58C9578E
+   End Object
+   Begin Object Name="BTComposite_Selector_0"
+      Children(0)=(ChildTask=BTTask_MoveTo'EnemyBehaivior:BTTask_MoveTo_0')
+      Services(0)=findplayerService_C'EnemyBehaivior:findplayerService_C_0'
+      TreeAsset=BehaviorTree'EnemyBehaivior'
+   End Object
+   Begin Object Name="findplayerService_C_0"
+      Player=(SelectedKeyName="Player")
+      state=(SelectedKeyName="State")
+      moveTo=(SelectedKeyName="MoveToLocation")
+      TreeAsset=BehaviorTree'EnemyBehaivior'
+      ParentNode=BTComposite_Selector'EnemyBehaivior:BTComposite_Selector_0'
+   End Object
+   Begin Object Name="BTTask_MoveTo_0"
+      Begin Object Name="BlackboardKey_Vector"
+      End Object
+      Begin Object Name="BlackboardKey_Object_0"
+         BaseClass=Class'/Script/Engine.Actor'
+      End Object
+      BlackboardKey=(SelectedKeyName="Player")
+      TreeAsset=BehaviorTree'EnemyBehaivior'
+      ParentNode=BTComposite_Selector'EnemyBehaivior:BTComposite_Selector_0'
+   End Object
+   RootNode=BTComposite_Selector'BTComposite_Selector_0'
+   BTGraph=BehaviorTreeGraph'"Behavior Tree"'
+   LastEditedDocuments(0)=(EditedObject=BehaviorTreeGraph'"Behavior Tree"',SavedViewOffset=(X=-632.099731,Y=-205.000000),SavedZoomAmount=1.000000)
+   BlackboardAsset=BlackboardData'/Game/ThirdPersonBP/Blueprints/enemyBlackBoard.enemyBlackBoard'
+End Object
