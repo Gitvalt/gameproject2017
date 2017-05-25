@@ -1,0 +1,100 @@
+Begin Object Class=Blueprint Name="enemy"
+   Begin Object Class=EdGraph Name="EventGraph"
+      Begin Object Class=K2Node_Event Name="K2Node_Event_0"
+      End Object
+      Begin Object Class=K2Node_Event Name="K2Node_Event_1"
+      End Object
+      Begin Object Class=K2Node_Event Name="K2Node_Event_2"
+      End Object
+   End Object
+   Begin Object Class=EdGraph Name="UserConstructionScript"
+      Begin Object Class=K2Node_FunctionEntry Name="K2Node_FunctionEntry_0"
+      End Object
+      Begin Object Class=K2Node_CallParentFunction Name="K2Node_CallParentFunction_0"
+      End Object
+   End Object
+   Begin Object Class=SceneThumbnailInfo Name="SceneThumbnailInfo_0"
+   End Object
+   Begin Object Name="EventGraph"
+      Begin Object Name="K2Node_Event_0"
+         EventReference=(MemberParent=Class'/Script/Engine.Actor',MemberName="ReceiveBeginPlay")
+         bOverrideFunction=True
+         NodeComment="This node is disabled and will not be called.\nDrag off pins to build functionality."
+         bCommentBubblePinned=True
+         bCommentBubbleVisible=True
+         NodeGuid=9A6DB234428C3ED038B1AD9F2CA6B34F
+         EnabledState=Disabled
+         CustomProperties Pin (PinId=80ED7746486CA8D144C0F3ADCBF08290,PinName="OutputDelegate",Direction="EGPD_Output",PinType.PinCategory="delegate",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(MemberParent=Class'/Script/Engine.Actor',MemberName="ReceiveBeginPlay"),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=34FD1E434D9589B741DE1FB450D50E69,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_Event_1"
+         EventReference=(MemberParent=Class'/Script/Engine.Actor',MemberName="ReceiveActorBeginOverlap")
+         bOverrideFunction=True
+         NodePosY=200
+         NodeComment="This node is disabled and will not be called.\nDrag off pins to build functionality."
+         bCommentBubblePinned=True
+         bCommentBubbleVisible=True
+         NodeGuid=A54E3ED647F048D38DF8CAB5CBABEBFF
+         EnabledState=Disabled
+         CustomProperties Pin (PinId=69770EFE41D6E9AC436AC8B622177CA6,PinName="OutputDelegate",Direction="EGPD_Output",PinType.PinCategory="delegate",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(MemberParent=Class'/Script/Engine.Actor',MemberName="ReceiveActorBeginOverlap"),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=8146E1AA4B4C6E6345BCEB89237A0A3E,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=1D2424514786684D78ADC9941E6BFC61,PinName="OtherActor",PinToolTip="Other Actor\nActor Reference",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject=Class'/Script/Engine.Actor',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_Event_2"
+         EventReference=(MemberParent=Class'/Script/Engine.Actor',MemberName="ReceiveTick")
+         bOverrideFunction=True
+         NodePosY=400
+         NodeComment="This node is disabled and will not be called.\nDrag off pins to build functionality."
+         bCommentBubblePinned=True
+         bCommentBubbleVisible=True
+         NodeGuid=9F31760E461689803ABEE188D85D328E
+         EnabledState=Disabled
+         CustomProperties Pin (PinId=B773B2A6449B22C5EDD14FADE9A3F796,PinName="OutputDelegate",Direction="EGPD_Output",PinType.PinCategory="delegate",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(MemberParent=Class'/Script/Engine.Actor',MemberName="ReceiveTick"),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=5F1C05B84ADB961358D56CA2B2F77C6D,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=8E80B4F54BCD2DC838D353ADC144527C,PinName="DeltaSeconds",PinToolTip="Delta Seconds\nFloat",Direction="EGPD_Output",PinType.PinCategory="float",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_Event'K2Node_Event_0'
+      Nodes(1)=K2Node_Event'K2Node_Event_1'
+      Nodes(2)=K2Node_Event'K2Node_Event_2'
+      bAllowDeletion=False
+      GraphGuid=FBAF5FE24D53CA768356E1A903B4E1D1
+   End Object
+   Begin Object Name="UserConstructionScript"
+      Begin Object Name="K2Node_FunctionEntry_0"
+         SignatureClass=Class'/Script/Engine.Actor'
+         SignatureName="UserConstructionScript"
+         NodeGuid=B24B7035498E513B317C258435D04D81
+         CustomProperties Pin (PinId=0BFC29F94543CA00DB1411AA1B69E29A,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallParentFunction_0 B974A21741C56388BCA394833BFFEFCD,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_CallParentFunction_0"
+         FunctionReference=(MemberParent=BlueprintGeneratedClass'/Game/ThirdPersonBP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C',MemberName="UserConstructionScript",MemberGuid=A80AC35042A06CC526F25488343E0399)
+         NodePosX=200
+         NodeGuid=4508395C430124ED702B1A96B8631BA6
+         CustomProperties Pin (PinId=B974A21741C56388BCA394833BFFEFCD,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_FunctionEntry_0 0BFC29F94543CA00DB1411AA1B69E29A,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=B933E5BB43DD997DAB0117878549C5D1,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=9251964C4CA46B5A75411CA9E16683A2,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject=Class'/Script/Engine.Actor',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.bIsMap=False,PinType.bIsSet=False,PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_FunctionEntry'K2Node_FunctionEntry_0'
+      Nodes(1)=K2Node_CallParentFunction'K2Node_CallParentFunction_0'
+      bAllowDeletion=False
+      GraphGuid=37B115124962A32420AA1B80030619F0
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0"
+   End Object
+   ParentClass=BlueprintGeneratedClass'/Game/ThirdPersonBP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C'
+   SimpleConstructionScript=SimpleConstructionScript'enemy_C:SimpleConstructionScript_0'
+   UbergraphPages(0)=EdGraph'EventGraph'
+   FunctionGraphs(0)=EdGraph'UserConstructionScript'
+   InheritableComponentHandler=InheritableComponentHandler'enemy_C:InheritableComponentHandler'
+   CategorySorting(0)="Default"
+   BlueprintSystemVersion=2
+   LastEditedDocuments(0)=(EditedObject=EdGraph'UserConstructionScript',SavedViewOffset=(X=-352.649994,Y=-355.100006),SavedZoomAmount=1.000000)
+   LastEditedDocuments(1)=(EditedObject=EdGraph'EventGraph',SavedViewOffset=(X=16.350006,Y=-207.100006),SavedZoomAmount=1.000000)
+   ThumbnailInfo=SceneThumbnailInfo'SceneThumbnailInfo_0'
+   GeneratedClass=BlueprintGeneratedClass'enemy_C'
+   bLegacyNeedToPurgeSkelRefs=False
+   bLegacyGeneratedClassIsAuthoritative=True
+   BlueprintGuid=8F95D314424A715228B6FBA79A7EFD37
+End Object

@@ -1,0 +1,22 @@
+Begin Object Class=Blueprint Name="BTDecorator_BlueprintBase_New"
+   Begin Object Class=SceneThumbnailInfo Name="SceneThumbnailInfo_0"
+   End Object
+   Begin Object Class=EdGraph Name="EventGraph"
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0"
+   End Object
+   Begin Object Name="EventGraph"
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      bAllowDeletion=False
+      GraphGuid=3739546B4F6370F4ED7427BCDFB6CADF
+   End Object
+   ParentClass=Class'/Script/AIModule.BTDecorator_BlueprintBase'
+   UbergraphPages(0)=EdGraph'EventGraph'
+   BlueprintSystemVersion=2
+   LastEditedDocuments(0)=(EditedObject=EdGraph'EventGraph',SavedZoomAmount=1.000000)
+   ThumbnailInfo=SceneThumbnailInfo'SceneThumbnailInfo_0'
+   GeneratedClass=BlueprintGeneratedClass'BTDecorator_BlueprintBase_New_C'
+   bLegacyNeedToPurgeSkelRefs=False
+   bLegacyGeneratedClassIsAuthoritative=True
+   BlueprintGuid=0417702D4A4FF352863691A742056127
+End Object
